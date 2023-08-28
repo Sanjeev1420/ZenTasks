@@ -3,3 +3,5 @@ b1 master
 changes in b1
 These lines wherewritten in master branch!!
 Deleted branch b1 and created branch b2
+
+The line is added now in b2 branch and commit is done
