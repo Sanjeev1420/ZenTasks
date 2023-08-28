@@ -1,3 +1,5 @@
 Hi Sanjeev
 b1 master
 changes in b1
+These lines wherewritten in master branch!!
+Deleted branch b1 and created branch b2
