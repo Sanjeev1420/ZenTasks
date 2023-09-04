@@ -19,11 +19,7 @@ let titleCaps = (arr) => {
     let res = [];
     arr.forEach(ele => {
         var words = ele.split(" ");
-        var res_wrd = "";
-        words.forEach(wrd => {
-            wrd = wrd.charAt(0).toUpperCase()+ wrd.slice(1) + " ";
-            res_wrd+=wrd;
-        });
+        let res_wrd = words.reduce((resWrd , ele) => resWrd + ele.charAt(0).toUpperCase() + ele.slice(1)+" " , "");
         res.push(res_wrd.trimEnd());
         res_wrd="";
     });
