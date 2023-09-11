@@ -1,0 +1,89 @@
+{
+    "name" : "Sanjeevraj S P",
+    "contacts" : {
+        "mobile" : "1234567890",
+        "email" : "sanjeevrajspkec2002@gmail.com"
+    },
+    "address" : {
+        "home" : "123/45 Erode , TamilNadu , India"
+    },
+    "objective" : "Problem solver and fast learner with strong communication skills. I am motivated to upgrade andexpand my skill set through mentorship and challenging projects. I enjoy working collaboratively but can also run with projects independently. I am excited about the prospect of joining the company.",
+    "technical skill" : [
+        "Java","JavaScript","Jquery","MySQL","ReactJS","NodeJS","ExpressJS","MongoDB","GIT"
+    ],
+    "soft skill" : [
+        "Design Thinking","Communication","Leadership Qualities"
+    ],
+    "college" : [
+        {
+           "graduation" : "post",
+           "degree" : "",
+           "college" : "",
+           "year" : "",
+           "percentage" : ""
+        },
+        {
+            "graduation" : "under",
+            "degree" : "BSc Computer Technology",
+            "college" : "Kongu Engineering College",
+            "year" : "2020-23",
+            "percentage" : "80.3"
+        }
+    ],
+    "schooling" : [
+        {
+            "grade" : "hsc",
+            "school" : "Green Garden matriculation Higher Secondary",
+            "percentage" : "70.6",
+            "year" : "2018-20"
+        },
+        {
+            "grade" : "sslc",
+            "school" : "Velalar Vidhyalaya CBSE",
+            "percentage" : "70",
+            "year" : "2017-18"  
+        }
+    ],
+    "Projects" : [
+        "Inventary Management System",
+        "Tools Mart Online"
+    ],
+    "Areas of Interest" : [
+        "Full Stack Development",
+        "Cloud Computing"
+    ],
+    "Courses" : [
+        "Matlab"
+    ],
+    "Membership and Leadership" : [
+        "Class Representative (3rd Semester UG) ",
+        "Coding Club - UG"
+    ],
+    "Internship" : [
+        {
+            "Company" : "Zoho Corporation",
+            "Duration" : "11 months"
+        }
+    ],
+    "Online Judges" : [
+        {
+            "platform" : "Guvi",
+            "profile" : "https://www.zenclass.in/dashboard"
+        },
+        {
+            "platform" : "LeetCode",
+            "profile" : "https://leetcode.com/Sanjeev1412/"
+        },
+        {
+            "platform" : "HackerRank",
+            "Profile" : "https://www.hackerrank.com/CSD_20BCR036?hr_r=1"
+        }
+    ],
+    "Personal Details" : {
+        "dob" : "14/12/2002",
+        "Language" : [
+            "Tamil",
+            "English"
+        ]
+    }
+}
