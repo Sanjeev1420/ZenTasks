@@ -81,7 +81,7 @@ console.log(addAnm());
 
 //IIFE function 
 
-function addIife(){
+var addIife = function(){
     let sum = 0;
     for(let i=0;i<arr2.length;i++){
         sum+=arr2[i];
