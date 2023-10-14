@@ -1,0 +1,158 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Placement</title>
+  </head>
+  <body>
+    <h1>JavaScript - Placement in HTML File</h1>
+    <hr />
+    <div class="clearer"></div>
+    <p>
+      There is a flexibility given to include JavaScript code anywhere in an
+      HTML document. However the most preferred ways to include JavaScript in an
+      HTML file are as follows &minus;
+    </p>
+    <ul class="list">
+      <li><p>Script in &lt;head&gt;...&lt;/head&gt; section.</p></li>
+      <li><p>Script in &lt;body&gt;...&lt;/body&gt; section.</p></li>
+      <li>
+        <p>
+          Script in &lt;body&gt;...&lt;/body&gt; and
+          &lt;head&gt;...&lt;/head&gt; sections.
+        </p>
+      </li>
+      <li>
+        <p>
+          Script in an external file and then include in
+          &lt;head&gt;...&lt;/head&gt; section.
+        </p>
+      </li>
+    </ul>
+    <p>
+      In the following section, we will see how we can place JavaScript in an
+      HTML file in different ways.
+    </p>
+    <h2>JavaScript in &lt;head&gt;...&lt;/head&gt; section</h2>
+    <p>
+      If you want to have a script run on some event, such as when a user clicks
+      somewhere, then you will place that script in the head as follows &minus;
+    </p>
+    <div class="demo-view">
+      <a
+        href="http://tpcg.io/S11ZZW"
+        target="_blank"
+        rel="nofollow"
+        class="demo"
+        ><i class="fa-external-link"></i> Live Demo</a
+      >
+    </div>
+    <pre class="prettyprint notranslate">
+&lt;html&gt;
+   &lt;head&gt;      
+      &lt;script type = "text/javascript"&gt;
+         &lt;!--
+            function sayHello() {
+               alert("Hello World")
+            }
+         //--&gt;
+      &lt;/script&gt;     
+   &lt;/head&gt;
+   
+   &lt;body&gt;
+      &lt;input type = "button" onclick = "sayHello()" value = "Say Hello" /&gt;
+   &lt;/body&gt;  
+&lt;/html&gt;
+</pre
+    >
+    <p>This code will produce the following results &minus;</p>
+    <iframe
+      onload="resizeFrame(this)"
+      class="result"
+      src="/javascript/src/placement1.htm"
+      height="80px"
+      width="660px"></iframe>
+    <h2>JavaScript in &lt;body&gt;...&lt;/body&gt; section</h2>
+    <p>
+      If you need a script to run as the page loads so that the script generates
+      content in the page, then the script goes in the &lt;body&gt; portion of
+      the document. In this case, you would not have any function defined using
+      JavaScript. Take a look at the following code.
+    </p>
+    <div class="demo-view">
+      <a
+        href="http://tpcg.io/fjLLaF"
+        target="_blank"
+        rel="nofollow"
+        class="demo"
+        ><i class="fa-external-link"></i> Live Demo</a
+      >
+    </div>
+    <pre class="prettyprint notranslate">
+&lt;html&gt;
+   &lt;head&gt;
+   &lt;/head&gt;
+   
+   &lt;body&gt;
+      &lt;script type = "text/javascript"&gt;
+         &lt;!--
+            document.write("Hello World")
+         //--&gt;
+      &lt;/script&gt;
+      
+      &lt;p&gt;This is web page body &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre
+    >
+    <p>This code will produce the following results &minus;</p>
+    <iframe
+      onload="resizeFrame(this)"
+      class="result"
+      src="/javascript/src/placement2.htm"
+      height="80px"
+      width="660px"></iframe>
+    <h2>JavaScript in &lt;body&gt; and &lt;head&gt; Sections</h2>
+    <p>
+      You can put your JavaScript code in &lt;head&gt; and &lt;body&gt; section
+      altogether as follows &minus;
+    </p>
+    <div class="demo-view">
+      <a
+        href="http://tpcg.io/MqrfLr"
+        target="_blank"
+        rel="nofollow"
+        class="demo"
+        ><i class="fa-external-link"></i> Live Demo</a
+      >
+    </div>
+    <pre class="prettyprint notranslate">
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;script type = "text/javascript"&gt;
+         &lt;!--
+            function sayHello() {
+               alert("Hello World")
+            }
+         //--&gt;
+      &lt;/script&gt;
+   &lt;/head&gt;
+   
+   &lt;body&gt;
+      &lt;script type = "text/javascript"&gt;
+         &lt;!--
+            document.write("Hello World")
+         //--&gt;
+      &lt;/script&gt;
+      
+      &lt;input type = "button" onclick = "sayHello()" value = "Say Hello" /&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre
+    >
+    <p>This code will produce the following result &minus;</p>
+  </body>
+</html>

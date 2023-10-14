@@ -1,0 +1,61 @@
+#pageBody {
+    display: flex;
+}
+
+#tutorialHeaders {
+    flex: 25%;
+}
+
+#content {
+    flex: 55%; 
+}
+
+#freeSpace{
+   flex:20%;
+}
+
+#topicsList {
+    background-color: rgb(248, 245, 245); 
+}
+
+#content {
+    background-color: rgb(255, 255, 255); 
+}
+
+#tutorialHeader{
+    background-color: hsl(46, 90%, 56%);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#tutorialHeaderCon{
+    color:white;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: Arial;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#allTopics{
+    list-style-type:square;
+    margin-top: 0px;
+    padding-left: 20px;
+}
+
+#allTopics li{
+    padding-top:10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+
+#allTopics ::marker{
+    color:rgb(113, 112, 112);
+}
+
+#content{
+    font-size : 15px;
+    padding-left:20px;
+    font-family: Verdana,sans-serif;
+}

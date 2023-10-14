@@ -1,0 +1,64 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation 2 - JS Tutorial</title>
+    <link href="jsTutorial.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="pageBody">
+      <div id="tutorialHeaders">
+        <div id="tutorialHeader">
+          <p id="tutorialHeaderCon">JavaScript Basics Tutorial</p>
+        </div>
+
+        <div id="topicsList">
+          <ul id="allTopics">
+            <li onclick="loadPage('alltopics/home.html')">Javascript - Home</li>
+            <li onclick="loadPage('alltopics/overview.html')">Javascript - Overview</li>
+            <li onclick="loadPage('alltopics/syntax.html')">Javascript - Syntax</li>
+            <li onclick="loadPage('alltopics/enabling.html')">Javascript - Enabling</li>
+            <li onclick="loadPage('alltopics/placement.html')">Javascript - Placement</li>
+            <li onclick="loadPage('alltopics/variables.html')">Javascript - Variables</li>
+            <li onclick="">Javascript - Operators</li>
+            <li onclick="">Javascript - If...Else</li>
+            <li onclick="">Javascript - Switch Case</li>
+            <li onclick="">Javascript - While Loop</li>
+            <li onclick="">Javascript - For Loop</li>
+            <li onclick="">Javascript - Loop Control</li>
+            <li onclick="">Javascript - Functions</li>
+            <li onclick="">Javascript - Events</li>
+            <li onclick="">Javascript - Cookies</li>
+            <li onclick="">Javascript - Page Redirect</li>
+            <li onclick="">Javascript - Dialog Boxes</li>
+            <li onclick="">Javascript - Void Keyword</li>
+            <li onclick="">Javascript - Page Printing</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="content"></div>
+
+      <div id="freeSpace"></div>
+    </div>
+  </body>
+
+  <script>
+    function loadPage(page) {
+      const container = document.getElementById("content");
+      fetch(page)
+        .then((response) => response.text())
+        .then((content) => {
+          container.innerHTML = content;
+        })
+
+        .catch((error) => {
+          console.error("Error loading content:", error);
+        });
+    }
+
+  </script>
+</html>

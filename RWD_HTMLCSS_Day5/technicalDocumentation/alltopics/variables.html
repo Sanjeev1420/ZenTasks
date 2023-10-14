@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <h1>JavaScript - Variables</h1>
+<hr />
+<h2>JavaScript Datatypes</h2>
+<p>One of the most fundamental characteristics of a programming language is the set of data types it supports. These are the type of values that can be represented and manipulated in a programming language.</p>
+<p>JavaScript allows you to work with three primitive data types &minus;</p>
+<ul class="list">
+<li><p><b>Numbers,</b> eg. 123, 120.50 etc.</p></li>
+<li><p><b>Strings</b> of text  e.g. "This text string" etc.</p></li>
+<li><p><b>Boolean</b> e.g. true or false.</p></li>
+</ul>
+<p>JavaScript also defines two trivial data types, <b>null</b> and <b>undefined,</b> each of which defines only a single value. In addition to these primitive data types, JavaScript supports a composite data type known as <b>object</b>. We will cover objects in detail in a separate chapter.</p>
+<p><b>Note</b> &minus; JavaScript does not make a distinction between integer values and floating-point values. All numbers in JavaScript are represented as floating-point values. JavaScript represents numbers using the 64-bit floating-point format defined by the IEEE 754 standard.</p>
+<h2>JavaScript Variables</h2>
+<p>Like many other programming languages, JavaScript has variables. Variables can be thought of as named containers. You can place data into these containers and then refer to the data simply by naming the container.</p>
+<p>Before you use a variable in a JavaScript program, you must declare it. Variables are declared with the <b>var</b> keyword as follows.</p>
+<pre class="prettyprint notranslate">
+&lt;script type = "text/javascript"&gt;
+   &lt;!--
+      var money;
+      var name;
+   //--&gt;
+&lt;/script&gt;
+</pre>
+<p>You can also declare multiple variables with the same <b>var</b> keyword as follows &minus;</p>
+<pre class="prettyprint notranslate">
+&lt;script type = "text/javascript"&gt;
+   &lt;!--
+      var money, name;
+   //--&gt;
+&lt;/script&gt;
+</pre>
+<p>Storing a value in a variable is called <b>variable initialization</b>. You can do variable initialization at the time of variable creation or at a later point in time when you need that variable.</p>
+<p>For instance, you might create a variable named <b>money</b> and assign the value 2000.50 to it later. For another variable, you can assign a value at the time of initialization as follows.</p>
+<pre class="prettyprint notranslate">
+&lt;script type = "text/javascript"&gt;
+   &lt;!--
+      var name = "Ali";
+      var money;
+      money = 2000.50;
+   //--&gt;
+&lt;/script&gt;
+</pre>
+<p><b>Note</b> &minus; Use the <b>var</b> keyword only for declaration or initialization, once for the life of any variable name in a document. You should not re-declare same variable twice.</p>
+<p>JavaScript is <b>untyped</b> language. This means that a JavaScript variable can hold a value of any data type. Unlike many other languages, you don't have to tell JavaScript during variable declaration what type of value the variable will hold. The value type of a variable can change during the execution of a program and JavaScript takes care of it automatically.</p>
+<h2>JavaScript Variable Scope</h2>
+<p>The scope of a variable is the region of your program in which it is defined. JavaScript variables have only two scopes.</p>
+<ul class="list">
+<li><p><b>Global Variables</b> &minus; A global variable has global scope which means it can be defined anywhere in your JavaScript code.</p></li>
+<li><p><b>Local Variables</b> &minus; A local variable will be visible only within a function where it is defined. Function parameters are always local to that function.</p></li>
+</ul>
+<p>Within the body of a function, a local variable takes precedence over a global variable with the same name. If you declare a local variable or function parameter with the same name as a global variable, you effectively hide the global variable. Take a look into the following example.</p>
+<div class="demo-view">
+<a href="http://tpcg.io/wAb0EM" target="_blank" rel="nofollow" class="demo"><i class="fa-external-link"></i> Live Demo</a>
+</div>
+<pre class="prettyprint notranslate">
+&lt;html&gt;
+   &lt;body onload = checkscope();&gt;   
+      &lt;script type = "text/javascript"&gt;
+         &lt;!--
+            var myVar = "global";      // Declare a global variable
+            function checkscope( ) {
+               var myVar = "local";    // Declare a local variable
+               document.write(myVar);
+            }
+         //--&gt;
+      &lt;/script&gt;     
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</body>
+</html>

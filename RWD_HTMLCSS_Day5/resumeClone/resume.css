@@ -1,0 +1,220 @@
+body{
+    background-color: rgb(239, 231, 231);
+}
+
+.resume {
+    width: 60%;
+    margin-left: 21%;  
+}
+
+#topHeadBlock1{
+    height : 220px;
+    background-color: rgb(114, 114, 114);
+}
+
+#topHeadBlock2{
+    height : 41px;
+    background-color: rgb(244, 243, 243);
+}
+
+#topHeadBlock3{
+    height : 40px;
+    background-color: rgb(114, 114, 114);
+}
+
+#candidateImg{
+   text-align:center;
+   padding-top: 38px;
+}
+
+#pic{
+   border-radius: 1000%;
+   width : 165px;
+   height : 163px;
+   border:6px dotted rgb(204, 164, 5);
+   padding-bottom: -4px;
+}
+
+#candidate{
+    display: inline-block;
+    margin-left: 27%; 
+    margin-bottom: 20px;
+}  
+
+#candidateName{
+    background-color: rgb(204, 164, 5);
+    text-align: center;
+    font-family: 'Lucida Sans';
+    font-size:51px;
+    margin-top: -20px;
+    padding:10px 43px 10px 43px;
+    border-radius: 3px;
+}
+
+#contacts{
+    padding-top: 1px;
+    background-color: white;
+}
+
+#contactDet{
+   color : black;
+   text-align: center;
+   margin-top: 4px;
+   margin-bottom: 4px;
+   border-bottom : 4px solid rgb(202, 200, 200);
+   padding-bottom : 4px;
+}
+
+#resumeBody{
+    background-color: white;
+    margin-top: -20px;
+    display:flex;
+    padding-bottom: 30px;
+}
+
+#bodyLeft,#bodyRight{
+    flex:1
+}
+
+#bodyRight{
+    border-left: 2px solid rgb(201, 200, 200);
+    margin-top: 40px;
+    margin-left: 0px;
+    padding-left: 25px;
+    padding-right:15px;
+}
+
+.headingInline {
+    display: flex;
+    align-items: center;
+}
+
+#bodyLeft{
+    margin-left:18px;
+    margin-top: 20px;
+    padding-right:3px;
+}
+
+#profileDetails{
+    padding : 10px;
+}
+
+.categoryIcon{
+    border:4px dotted rgb(204, 164, 5);
+    border-radius: 120%;
+}
+
+.categoryImg{
+    background-color:	rgb(53, 52, 52);
+    height:50px;
+    width :50px;
+    border-radius: 70%;
+}
+
+.categoryName{
+  font-size: 27px;
+  font-family: Verdana;
+  color:grey;
+}
+
+#profileBodyCon {
+    font-size : 15px;
+    font-family: sans-serif;
+}
+
+.allSkills{
+    line-height: 0px;
+}
+
+.skillLevelIcon {
+text-align: center;
+    
+}
+
+.skillsCategory {
+    text-align : center;
+    font-family: Verdana;
+}
+
+.skillList{
+    display :block;
+    font-family: Verdana;
+    font-size:11px;
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.skillLists{
+    text-indent: 3px;
+}
+
+.skillLevelIcon{
+    height:18px;
+    width: 280px;
+    text-indent: 2%;
+}
+
+#techSkillHeadCon{
+    margin-top: 4px;;
+}
+.expHeading{
+    display : flex;
+}
+
+.basicExpDetails{
+    line-height: 2px;
+}
+
+.duration{
+    margin-left: 150px;
+}
+
+#wrkLocation{
+    margin-top: 0px;
+}
+
+#experienceLeft{
+    padding-top : 17px;
+}
+
+#expBodyLeft , #expBodyRight{
+    line-height : 22px;
+}
+
+.expDetails{
+    padding-left: 25px;
+}
+
+.eduDuration{
+    margin-left: 80px;
+}
+
+#expDurationRight{
+  margin-left : 95px;
+}
+
+#eduHeading{
+    margin-bottom: 0px;
+}
+
+#eduHeadName{
+    margin-bottom: 0px;
+}
+
+#eduDetailedCon , #eduInto {
+    font-size :16px;
+    line-height: 22px;
+}
+
+#eduDurationEng{
+    margin-left:166px;
+}
+
+#baEng {
+    margin-top:31px;
+    line-height: 0px;
+}
+
+#eduLocationEng{
+    margin-top: 5px;
+}
