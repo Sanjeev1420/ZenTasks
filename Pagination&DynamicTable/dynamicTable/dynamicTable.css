@@ -1,0 +1,63 @@
+#pageBody {
+    display: flex;
+    background-color: rgb(202, 242, 243);
+}
+
+#formLeft {
+    flex:33%;
+    padding-left:10px;
+}   
+
+#tableRight {
+    flex:67%;
+}
+
+#formBody{
+    width:80%;
+    text-align: center;
+    background: rgb(4,158,244);
+    background: linear-gradient(37deg, rgba(4,158,244,1) 0%, rgba(180,32,139,1) 100%);
+    border-radius: 10px;
+    padding-bottom: 13px;
+    
+}
+
+#formBody input[type="text"],#formBody input[type="number"],#formBody textarea , #formBody select{
+    width: 90%;
+    margin-left:18px;
+    opacity: 0.7;
+}
+
+#formBody label{
+   padding-left: 32px;
+}
+
+#formTitle{
+    padding-top: 10px;
+}
+.radioLabel{
+   width:0%;
+}
+
+.radioCheckAlign{
+    margin-left: 21px;
+}
+   
+.chkLabel{
+    width:fit-content
+}
+
+#tableRight{
+    padding-top: 100px;
+    padding-right: 25px;
+}
+
+.ermsg{
+    color:red;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+}
+

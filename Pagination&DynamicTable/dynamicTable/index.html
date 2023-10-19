@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table</title>
+    <link href="dynamicTable.css" rel="stylesheet"/> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+</head>
+<body>
+    
+    <div id="pageBody">
+        <div id="formLeft">
+            <br>
+            <form id="formBody" class="text-center">
+                <h3 id="formTitle">Survey</h3><br>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="usrFname" name="usrFname" placeholder="" required> 
+                    <label for="usrFname">First Name :</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="usrLname" name="usrLname" placeholder="" required>
+                    <label for="usrLname">Last Name :</label>
+                </div>
+                
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="" id="usrAddress" name="usrAddress" required></textarea>
+                    <label for="usrAddress">Address :</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="pincode" placeholder="" required>
+                    <label for="pincode">Pincode :</label>
+                </div>
+
+                <div class="radioCheckAlign">
+                    <fieldset class="row mb-3">
+                        <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                        <div class="col-sm-10">
+                        <div class="form-check radioLabel">
+                            <input class="form-check-input" type="radio" name="gender" id="gender1" value="Male" required>
+                            <label class="form-check-label" for="gender1">
+                            Male
+                            </label>
+                        </div>
+                        <div class="form-check radioLabel">
+                            <input class="form-check-input" type="radio" name="gender" id="gender2" value="Female" required>
+                            <label class="form-check-label" for="gender2">
+                            Female
+                            </label>
+                        </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="radioCheckAlign">
+                    <fieldset class="row mb-3">
+                        <legend class="col-form-label col-sm-2 pt-0" style="padding-left: 4px;">Food</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check chkLabel">
+                                <input type="checkbox" class="form-check-input" id="check1" value="North Indian" name="food" >
+                                <label class="form-check-label" for="check1">North Indian Cuisine</label>
+                              </div>
+                              <div class="form-check chkLabel">
+                                <input type="checkbox" class="form-check-input" id="check2" value="South Indian" name="food" >
+                                <label class="form-check-label" for="check2">South Indian Cuisine</label>
+                              </div>
+                              <div class="form-check chkLabel">
+                                <input type="checkbox" class="form-check-input" id="check3" value="Gujarati" name="food" >
+                                <label class="form-check-label" for="check3">Gujarati Cuisine</label>
+                              </div>
+                              <div class="form-check chkLabel">
+                                <input type="checkbox" class="form-check-input" id="check4" value="Mughlai" name="food" >
+                                <label class="form-check-label" for="check4">Mughlai Cuisine</label>
+                              </div>
+                              <div class="form-check chkLabel">
+                                <input type="checkbox" class="form-check-input" id="check5" value="Bengali" name="food" >
+                                <label class="form-check-label" for="check5">Bengali Cuisine</label><br>
+                              </div> 
+
+                              <div class="ermsg">
+                                <span id="erMsg"></span>
+                              </div>
+                             
+                        </div>
+                    </fieldset>
+                    
+                </div>
+
+                <div class="form-floating">
+                    <select class="form-select" id="usrState" name="selectedState" aria-label="Floating label select example" required>
+                       <option value="Anthra Pradesh">Anthra Pradesh</option>
+                       <option value="Gujarat">Gujarat</option>
+                       <option value="Karnataka">Karnataka</option>
+                       <option value="Kerala">Kerala</option>
+                       <option value="Tamil Nadu">Tamil Nadu</option>
+                       <option value="Telungana">Telungana</option>
+                    </select>
+                    <label for="floatingSelect">State</label>
+                </div><br>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="usrCountry" name="Country" placeholder="" value="India" required>
+                    <label for="usrCountry">Country :</label>
+                </div>
+                <br>
+               
+                <input type="submit" class="btn btn-info" value="Submit">
+
+            </form>
+        </div>
+    
+
+        <div id="tableRight">
+            <table class="table" id="tableBody">
+                <thead class="table table-dark">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Address</th>
+                        <th>Pincode</th>
+                        <th>Gender</th>
+                        <th>Food</th>
+                        <th>State</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody" class="table table-light"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script> 
+</body>
+</html>
