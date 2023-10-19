@@ -115,11 +115,15 @@ function displayData(data, currentPage, itemsPerPage) {
 }
 
 function previousClick(){
+  if(currentPage-1 >=1 && currentPage-1<=netPages){
     currentPage--;
     loadData(currentPage);
+  } 
 }
 
 function nextClick(){
+  if(currentPage+1 >=1 && currentPage+1<=netPages){
   currentPage++;
   loadData(currentPage);
+  }
 }
