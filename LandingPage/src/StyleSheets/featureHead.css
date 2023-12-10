@@ -1,0 +1,14 @@
+#featureheadstart {
+    margin-top: 52px;
+}
+
+
+
+.features-icons ,
+.features-icons-item {
+    max-width: 20rem;
+}
+
+i{
+    font-size: 72px;
+}

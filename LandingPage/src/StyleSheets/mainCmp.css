@@ -1,0 +1,48 @@
+
+.mainFront {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://imgs.search.brave.com/Mh_tDFmiVIcxR0u3homLHktV76t8IGqz-RiqUp-Grz0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/MzMzNzE0NTIzODIt/ZDQ1YTlkYTUxYWQ5/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRKOGZH/OWpaV0Z1SlRJd1lt/VmhZMmg4Wlc1OE1I/eDhNSHg4ZkRBPQ.jpeg'); /* Replace with your image file path */
+    background-size:cover;
+    width: 100%;
+    height: 500px;
+}
+
+.mainFrontCnt{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+   padding-top: 110px;
+}
+
+.mainFront p{
+  font-size:3rem;
+  color: rgb(247, 249, 251);
+  line-height: 33px;
+  font-weight: 600;
+  word-spacing: 7px;
+}
+
+.mainCnt{
+    padding: auto;
+}
+
+.userEmail {
+    margin-top: 30px;
+    width: 430px; 
+    height: 60px; 
+    border-radius: 4px;
+    margin-right: 20px;
+    font-size: 18px;
+    border: none;
+}
+
+ 
+#submitBtn {
+    width: 100px; 
+    height: 60px;
+    font-size: 18px; 
+}
+  
+
+  
